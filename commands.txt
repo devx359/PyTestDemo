@@ -1,0 +1,8 @@
+#pytest
+#Run all tests in the folder
+    1) cd go to test folder
+    2) pytest or pytest -v  //verbose
+    2) python -m pytest
+#run single test
+pytest test_TC1.py
+
