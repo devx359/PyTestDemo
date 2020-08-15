@@ -5,4 +5,5 @@
     2) python -m pytest
 #run single test
 pytest test_TC1.py
-
+#to enable print in console
+pytest -s test_TC1.py
