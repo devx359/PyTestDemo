@@ -7,3 +7,25 @@
 pytest test_TC1.py
 #to enable print in console
 pytest -s test_TC1.py
+
+#Allure
+#installation
+1)download scoop
+    open powershell and execute
+        a) Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+        b) iwr -useb get.scoop.sh | iex
+        c) scoop install allure
+
+
+#generate reports json
+pytest --alluredir=/path/to/reportfolder
+#generate reports to temp directory
+allure serve E:\PythonWorkspace\PyTestDemo\AllureReports
+#generate report to specific folder
+allure generate E:\PythonWorkspace\PyTestDemo\AllureReports -o E:\PythonWorkspace\allure
+#open generated report in server
+allure open E:\PythonWorkspace\allure
+
+
+#pytest-html report
+pytest -v -s test_YT.py --html=report.html

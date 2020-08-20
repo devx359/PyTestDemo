@@ -1,3 +1,4 @@
+import pytest
 from selenium import webdriver
 import time
 from .custom_waits import deal_of_the_day_is_red
@@ -15,8 +16,12 @@ def test_setup():
     #driver.implicitly_wait(10)  # seconds
     #driver.set_page_load_timeout(20)
 
+def test_who():
+    pytest.skip('skippping 1')
+
 
 def test_youtubeSearch():
+    pytest.skip('skippping youtube')
     driver.get("https://www.amazon.in/")
 
     WebDriverWait(driver,10).until(

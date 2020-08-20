@@ -40,7 +40,7 @@ def test_dictionaryTests():
     for x in dd.items():
         print(x)
         dict()
-
+@pytest.mark.skip(reason="dont need this")
 def test_unpackingoperators():
     mylist = [11,22,33,44,55,66,77]
     a,*b,c =mylist
@@ -48,8 +48,25 @@ def test_unpackingoperators():
     print(b)
     print(c)
 
+def test_tuple():
+    tp =  (1, "Jeff", "Computer", 75.50, True)
+    print(tp)
+    ll = [1, "Jeff", "Computer", 75.50, True]
+    print(ll,id(ll))
+    ll[0]=22
+    print(ll, id(ll))
+    ll = [11, "Jeff1", "Computer", 75.50, True,True]
+    print(ll,id(ll))
 
+    xx=[]
+    a ="Debapriyo"
+    for x in a:
+        xx.append(x)
+    print((xx))
 
+    ss={}
+    ss={"a",2,True,False,(22,33)}
+    print(ss)
 
 
 
