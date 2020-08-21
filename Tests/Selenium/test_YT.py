@@ -75,7 +75,16 @@ def test_success():
     assert True
 def test_failure():
     assert False
-    
+@pytest.mark.xfail(reason="bug raised not resolved")
+def test_funct():
+    print("expected to fail")
+
+def test_funct2():
+    print("inside func2")
+    if(False):
+        pytest.xfail("It should fail for failed condition")
+
+
 
 
 
