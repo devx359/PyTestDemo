@@ -69,7 +69,13 @@ def test_youtubeSearch():
         print(x['title'],x['price'])
 
 
-
+def test_broker():
+    raise Exception("something is wrong")
+def test_success():
+    assert True
+def test_failure():
+    assert False
+    
 
 
 
